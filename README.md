@@ -1,5 +1,5 @@
-# 백기선 강의 예제
-개인공부를 하기위해 백기선강의 예제를 정리한 목록입니다.
+# 스프링 부트 개념과 활용 예제
+개인 공부를 하기위해 백기선제 강의 예제를 정리한 목록입니다.
 
 ## 스프링 부트 시작하기
 1. [spring-boot-getting-started](https://github.com/jihyeon-e/gisun-lecture/tree/master/spring-boot-getting-started)
