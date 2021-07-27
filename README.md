@@ -15,8 +15,8 @@
 ## 스프링 부트 운영
 
 
----
+
 # 스프링 시큐리티
 
-## 스프링 부트 원리
+## 스프링 시큐리티: 폼 인증
 1. [demo-spring-security-form](https://github.com/jihyeon-e/gisun-lecture/tree/master/demo-spring-security-form)
