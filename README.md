@@ -5,6 +5,7 @@
 1. [spring-boot-getting-started](https://github.com/jihyeon-e/gisun-lecture/tree/master/spring-boot-getting-started)
 2. [jihyeon-spring-boot-starter](https://github.com/jihyeon-e/gisun-lecture/tree/master/jihyeon-spring-boot-starter)
 3. [spring-boot-start](https://github.com/jihyeon-e/gisun-lecture/tree/master/spring-boot-start)
+4. [web-server-showcase](https://github.com/jihyeon-e/gisun-lecture/tree/master/web-server-showcase)
 
 ## 스프링 부트 활용
 1. [spring-boot-embedded-server](https://github.com/jihyeon-e/gisun-lecture/tree/master/spring-boot-embedded-server)
