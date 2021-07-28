@@ -11,7 +11,7 @@
 1. [spring-boot-embedded-server](https://github.com/jihyeon-e/gisun-lecture/tree/master/spring-boot-embedded-server)
 2. [spring-test-demo](https://github.com/jihyeon-e/gisun-lecture/tree/master/spring-test-demo)
 3. [demo-spring-mvc](https://github.com/jihyeon-e/gisun-lecture/tree/master/demo-spring-mvc)
-
+4. [spring-boot-mvc-template](https://github.com/jihyeon-e/gisun-lecture/tree/master/spring-boot-mvc-template)
 
 ## 스프링 부트 운영
 
