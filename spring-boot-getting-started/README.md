@@ -112,3 +112,64 @@ spring-boot-web과 관련된 dependency가 추가된다.
 -   classpath에 root 폴더는 resources폴더이다.
 
 ![https://i.imgur.com/8860ABr.png](https://i.imgur.com/8860ABr.png)
+
+# 2. 스프링 부트 원리 - 의존성 관리
+
+# 1. 의존성 관리 이해
+
+**스프링 부트 dependency 동작 원리**
+
+- pom.xml 에 spring-boot-starter-parent 의존성을 추가함
+- spring-boot-starter-parent 는 spring-boot-dependencies를 의존하고 있음
+- spring-boot-dependencies에 스프링에 사용될 버전들이 명시되어 있음
+
+![https://i.imgur.com/9Qf4x5e.png](https://i.imgur.com/9Qf4x5e.png)
+
+- 직접 버전을 명시해주지 않아도 spring-boot-dependencies 설정되어 있는 버전들을 사용함
+
+**Spring boot 의존성 장점**
+
+- 기존 스프링보다 직접 관리해야 할 의존성의 수가 줄어듦
+- 스프링 부트가 버전을 관리해주기 때문에 라이브러리 간의 버전 호환을 신경쓰지 않아도 됨
+- yml, plugin 설정 등 스프링 부트에 최적화된 설정들이 추가되어있음
+
+# 2. 의존성 관리 응용
+
+**의존성 추가**
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency> 
+```
+
+위와같이 의존성을 추가하게되면 아래와같이 Spring JPA와 관련된 의존성들이 추가된 모습을 볼 수 있다.
+
+![https://i.imgur.com/4U667il.png](https://i.imgur.com/4U667il.png)
+
+스프링 부트가 버전을 관리하는 의존성이  아닌 경우 항상 버전까지 명시해야 한다.
+
+```xml
+<dependency>
+    <groupId>org.modelmapper</groupId>
+    <artifactId>modelmapper</artifactId>
+    <version>2.1.0</version>
+</dependency>
+```
+
+스프링 부트가 관리하는 의존성의 버전을 바꾸고 싶을 때는  properties에 추가한다.
+
+```xml
+<properties>
+	  <spring.version>5.0.6.RELEASE</spring.version>
+</properties>
+```
+
+아래와 같이 스프링 버전이 5.0.6으로 바뀐 것을 확인할 수 있다.
+
+![https://i.imgur.com/3OBxsRK.png](https://i.imgur.com/3OBxsRK.png)
+
+### 참고
+
+- 백기선님의 스프링 부트 개념과 활용 강의

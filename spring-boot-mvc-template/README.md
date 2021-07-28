@@ -23,10 +23,10 @@
 
 - JSP는 자동 설정을 지원하지 않는 데다가 권장하지도 않는다.
 - 권장하지 않는 이유
-    - 스프링 부트가 지향하는 바와 맞지 않는데, 스프링 부트는 독립적으로 실행 가능한 Embeded Tomcat으로 Application을 빠르게 배포하고 실행하길 바란다.
-    - JSP를 사용하면 JAR로 패키징한 파일을 사용하지 못하고, WAR로 패키징 해야한다.
-      물론 WAR로 패키징해도 Embeded Tomcat으로 실행할 수 있고, 다른 Tomcat Servlet 엔진에 WAR 파일을 배포할 수 있다.
-    - 하지만 Servlet 엔진 중에 Undertow라는 가장 최근에 만들어진 Servlet 엔진은 JSP를 아예 지원하지 않는다.
+  - 스프링 부트가 지향하는 바와 맞지 않는데, 스프링 부트는 독립적으로 실행 가능한 Embeded Tomcat으로 Application을 빠르게 배포하고 실행하길 바란다.
+  - JSP를 사용하면 JAR로 패키징한 파일을 사용하지 못하고, WAR로 패키징 해야한다.
+    물론 WAR로 패키징해도 Embeded Tomcat으로 실행할 수 있고, 다른 Tomcat Servlet 엔진에 WAR 파일을 배포할 수 있다.
+  - 하지만 Servlet 엔진 중에 Undertow라는 가장 최근에 만들어진 Servlet 엔진은 JSP를 아예 지원하지 않는다.
 - JSP에 대한 의존성을 넣으면 의존성 문제가 생기는 경우도 있다.
 - 이러한 제약 사항들이 있어서 JSP는 요즘에 잘 쓰지 않는다.
 
@@ -102,8 +102,8 @@ public class SampleController {
 
 - 요청 "/"
 - 응답
-    - 모델 name : hyeon
-    - 뷰 이름 : hello
+  - 모델 name : hyeon
+  - 뷰 이름 : hello
 
 ```java
 package me.hyeon.springbootmvctemplate;
@@ -221,7 +221,7 @@ MockHttpServletResponse:
 ```
 
 - Thymeleaf 사용하기 위해 th 네임스페이스 추가하기
-    - <html lang="en" xmlns:th="http://www.thymeleaf.org">
+  - <html lang="en" xmlns:th="http://www.thymeleaf.org">
 - Controller에서 Model로 받아온 name 사용
 
 **SampleController**
@@ -247,3 +247,7 @@ public class SampleController {
 웹 애플리케이션을 실행하면 컨트롤러에서 받은 name 값이 출력되는 것을 확인할 수 있다.
 
 ![https://i.imgur.com/8nNVlZO.png](https://i.imgur.com/8nNVlZO.png)
+
+### 참고
+
+- 백기선님의 스프링 부트 개념과 활용 강의
