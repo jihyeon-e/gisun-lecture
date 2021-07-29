@@ -297,6 +297,7 @@ public class SpringControllerTest {
 - TestRestTemplate
 - ConfigFileApplicationContextInitializer
 
+
 ### 참고
 
 - 백기선님의 스프링 부트 개념과 활용 강의
